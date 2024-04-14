@@ -2,21 +2,73 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent information -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.16-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
-	<groupId>com.lo42j2</groupId>
-	<artifactId>tutorial</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>tutorial</name>
+
+	<!-- Core information -->
+	<groupId>io.github.sachithariyathilaka</groupId>
+	<artifactId>lo42j2-tutorial</artifactId>
+	<version>1.0.0</version>
+
+	<!-- Packaging information -->
+	<packaging>jar</packaging>
+
+	<!-- Project information -->
+	<name>Log42J2 Tutorial</name>
 	<description>Tutorial project for Log42j2</description>
+	<url>https://github.com/sachithariyathilaka/log42j2-tutorial</url>
+	<inceptionYear>2024</inceptionYear>
+
+	<!-- License information -->
+	<licenses>
+
+		<license>
+			<name>MIT Licence</name>
+		</license>
+
+	</licenses>
+
+	<!-- Organization information -->
+	<organization>
+		<name>ByteGen Technologies</name>
+		<url>https://github.com/sachithariyathilaka</url>
+	</organization>
+
+	<!-- Developer information -->
+	<developers>
+
+		<developer>
+			<id>1</id>
+			<name>Sachith Ariyathilaka</name>
+			<organization>ByteGen Technologies</organization>
+			<organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
+			<email>sachith.vidu@yahoo.com</email>
+			<roles>
+				<role>Chairman</role>
+			</roles>
+			<timezone>UTC +5:30</timezone>
+		</developer>
+
+	</developers>
+
 	<properties>
-		<java.version>11</java.version>
+
+		<!-- Project properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>17</java.version>
+
 	</properties>
+
+	<!-- Dependency information -->
 	<dependencies>
+
+		<!-- Starter dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -30,66 +82,109 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-logging</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
+
 	</dependencies>
 
+	<!-- Profile information -->
+	<profiles>
+
+		<profile>
+			<id>tutorial</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+
+	</profiles>
+
+	<!-- Repository information -->
+	<repositories>
+
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+
+	</repositories>
+
+	<!-- Plugin repository information -->
+	<pluginRepositories>
+
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+
+	</pluginRepositories>
+
+	<!-- Build information -->
 	<build>
+
+		<!-- General information -->
+		<directory>${project.basedir}/target</directory>
+		<outputDirectory>${project.build.directory}/classes</outputDirectory>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+
+		<!-- Resource information -->
+		<resources>
+
+			<resource>
+				<directory>${basedir}/src/main/resources</directory>
+			</resource>
+
+		</resources>
+
+		<!-- Plugin information -->
 		<plugins>
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
-		<finalName>log42j2-tutorial</finalName>
+
 	</build>
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</pluginRepository>
-	</pluginRepositories>
+
+	<!-- SCM information -->
+	<scm>
+		<url>https://github.com/sachithariyathilaka/log42j2-tutorial</url>
+		<connection>scm:git:https://github.com/sachithariyathilaka/log42j2-tutorial.git</connection>
+		<developerConnection>scm:git:git@github.com:sachithariyathilaka/log42j2-tutorial.git</developerConnection>
+	</scm>
+
+	<!-- Reporting information -->
+	<reporting>
+		<outputDirectory>${project.build.directory}/site</outputDirectory>
+	</reporting>
 
 </project>
