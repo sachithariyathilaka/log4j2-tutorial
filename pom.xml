@@ -13,7 +13,7 @@
 
 	<!-- Core information -->
 	<groupId>io.github.sachithariyathilaka</groupId>
-	<artifactId>lo4j2-tutorial</artifactId>
+	<artifactId>log4j2-tutorial</artifactId>
 	<version>1.0.0</version>
 
 	<!-- Packaging information -->

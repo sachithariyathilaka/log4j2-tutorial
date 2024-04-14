@@ -1,0 +1,11 @@
+[INFO ] 2024-04-14 15:05:57.232 [main] Log4j2TutorialApplication - Starting Log4j2TutorialApplication using Java 17.0.6 on Sachith-Laptop with PID 9620 (D:\Project\log42j2-tutorial\target\classes started by Sachith Ariyathilaka in D:\Project\log42j2-tutorial)
+[INFO ] 2024-04-14 15:05:57.244 [main] Log4j2TutorialApplication - The following 1 profile is active: "tutorial"
+[INFO ] 2024-04-14 15:05:58.010 [main] TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[INFO ] 2024-04-14 15:05:58.027 [main] Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[INFO ] 2024-04-14 15:05:58.028 [main] StandardService - Starting service [Tomcat]
+[INFO ] 2024-04-14 15:05:58.029 [main] StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.80]
+[INFO ] 2024-04-14 15:05:58.127 [main] [/log4j2-tutorial] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2024-04-14 15:05:58.128 [main] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 843 ms
+[INFO ] 2024-04-14 15:05:58.403 [main] Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+[INFO ] 2024-04-14 15:05:58.419 [main] TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/log4j2-tutorial'
+[INFO ] 2024-04-14 15:05:58.428 [main] Log4j2TutorialApplication - Started Log4j2TutorialApplication in 1.544 seconds (JVM running for 2.551)
