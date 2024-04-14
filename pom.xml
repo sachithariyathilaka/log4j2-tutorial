@@ -13,16 +13,16 @@
 
 	<!-- Core information -->
 	<groupId>io.github.sachithariyathilaka</groupId>
-	<artifactId>lo42j2-tutorial</artifactId>
+	<artifactId>lo4j2-tutorial</artifactId>
 	<version>1.0.0</version>
 
 	<!-- Packaging information -->
 	<packaging>jar</packaging>
 
 	<!-- Project information -->
-	<name>Log42J2 Tutorial</name>
-	<description>Tutorial project for Log42j2</description>
-	<url>https://github.com/sachithariyathilaka/log42j2-tutorial</url>
+	<name>Log4j2 Tutorial</name>
+	<description>Tutorial project for Log4j2</description>
+	<url>https://github.com/sachithariyathilaka/log4j2-tutorial</url>
 	<inceptionYear>2024</inceptionYear>
 
 	<!-- License information -->
@@ -177,9 +177,9 @@
 
 	<!-- SCM information -->
 	<scm>
-		<url>https://github.com/sachithariyathilaka/log42j2-tutorial</url>
-		<connection>scm:git:https://github.com/sachithariyathilaka/log42j2-tutorial.git</connection>
-		<developerConnection>scm:git:git@github.com:sachithariyathilaka/log42j2-tutorial.git</developerConnection>
+		<url>https://github.com/sachithariyathilaka/log4j2-tutorial</url>
+		<connection>scm:git:https://github.com/sachithariyathilaka/log4j2-tutorial.git</connection>
+		<developerConnection>scm:git:git@github.com:sachithariyathilaka/log4j2-tutorial.git</developerConnection>
 	</scm>
 
 	<!-- Reporting information -->

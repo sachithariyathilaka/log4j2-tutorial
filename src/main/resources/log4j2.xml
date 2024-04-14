@@ -11,8 +11,8 @@
         </Console>
 
         <RollingFile name="fileLogger"
-                     fileName="${basePath}/log42j2-tutorial.log"
-                     filePattern="${basePath}/log42j2-tutorial-%d{yyyy-MM-dd}.log">
+                     fileName="${basePath}/log4j2-tutorial.log"
+                     filePattern="${basePath}/log4j2-tutorial-%d{yyyy-MM-dd}.log">
             <PatternLayout>
                 <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
                 </pattern>
