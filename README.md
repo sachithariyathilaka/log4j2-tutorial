@@ -1,5 +1,5 @@
 # Log42j2 Tutorial
-Spring boot log42j2 tutorial project
+Spring boot log4j2 tutorial project
 
 * ### Technologies
   * Java 17
@@ -15,7 +15,7 @@ Spring boot log42j2 tutorial project
 
   * Release: 1.0.0
   * Date: 2024/04/14
-  * Module: Log42j2 Tutorial
+  * Module: Log4j2 Tutorial
   * Changes
     * Config the log4j2 in the spring boot application.
 
